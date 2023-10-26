@@ -34,8 +34,8 @@ public class Generics2 {
             animais.consulta();
         }
     }
-
-      private static void consultandoAnimais2(List<? super Animal> animal) { //Nessa lista pode se adicionar elementos pois é certeza que tem que vim algo do tipo Animal para cima, a relação super pede que seja do filho para o pai, enquanto extends é de pai para filho
+    
+    private static void consultandoAnimais2(List<? super Animal> animal) { //Nessa lista pode se adicionar elementos pois é certeza que tem que vim algo do tipo Animal para cima, a relação super pede que seja do filho para o pai, enquanto extends é de pai para filho
         animal.add(new Cachorro());
         animal.add(new Gato());
 
